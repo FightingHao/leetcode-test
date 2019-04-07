@@ -12,7 +12,7 @@ function Stack() {
 
   // 出栈
   this.pop = function () {
-    items.pop()
+    return items.pop()
   }
 
   // 返回栈顶元素
@@ -41,9 +41,4 @@ function Stack() {
   }
 }
 
-// test
-const stack = new Stack()
-stack.push(1)
-stack.print()
-stack.pop()
-stack.print()
+module.exports = Stack
