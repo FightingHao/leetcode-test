@@ -15,7 +15,7 @@ class Stack {
 
   // 出栈
   pop() {
-    items.get(this).pop()
+    return items.get(this).pop()
   }
 
   // 返回栈顶元素
@@ -44,9 +44,4 @@ class Stack {
   }
 }
 
-// test
-const stack = new Stack()
-stack.push(1)
-stack.print()
-stack.pop()
-stack.print()
+module.exports = Stack
