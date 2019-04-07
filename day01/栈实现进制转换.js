@@ -1,22 +1,27 @@
 const Stack = require('./JS模拟栈_01')
 
-function scale(number) {
+/*
+ * @param1: 待转换数
+ * @param2: 进制
+ */
+function scale(number, base) {
   let stack = new Stack(),
     rem,
-    binaryStr = ''
+    binaryStr = '',
+    digits = '0123456789ABCDEF'
 
   while (number) {
-    rem = Math.floor(number % 2)
+    rem = Math.floor(number % base)
     stack.push(rem)
-    number = Math.floor(number / 2)
+    number = Math.floor(number / base)
   }
 
   while (!stack.isEmpty()) {
-    binaryStr += stack.pop().toString()
+    binaryStr += digits[stack.pop()]
   }
 
   return binaryStr
 }
 
-const result = scale(10)
+const result = scale(10, 2)
 console.log(result)
