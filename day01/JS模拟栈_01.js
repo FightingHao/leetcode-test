@@ -3,7 +3,7 @@
  */
 function Stack() {
   // 初始化栈
-  let items = []
+  var items = []
 
   // 入栈
   this.push = function (elements) {
