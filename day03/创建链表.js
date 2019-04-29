@@ -4,6 +4,7 @@ function LinkedList() {
     this.element = element
     this.next = null
   }
+  
   // 长度
   let length = 0
   // 链表头
