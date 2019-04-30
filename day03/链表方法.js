@@ -1,3 +1,3 @@
-function append(params) {
-  
+function append(element) {
+
 }
