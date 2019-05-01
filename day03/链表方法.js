@@ -2,6 +2,6 @@ function append(element) {
 
 }
 
-function insert() {
+function insert(position, element) {
 
 }
