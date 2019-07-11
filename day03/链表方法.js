@@ -1,5 +1,4 @@
 function append(element) {
 }
 
-function insert(position, element) {
-}
+function insert(position, element) {}
